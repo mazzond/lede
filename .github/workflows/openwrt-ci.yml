@@ -16,7 +16,7 @@ jobs:
         ./scripts/feeds install -a
     - name: Setup Debug Session
       uses: P3TERX/debugger-action@master
-    - name : Upload artifact
+    - name : Upload artifacts
       uses: actions/upload-artifact@master
       with:
         name: OpenWrt
