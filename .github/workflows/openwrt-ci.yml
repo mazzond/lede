@@ -16,8 +16,8 @@ jobs:
         ./scripts/feeds install -a
     - name: Setup Debug Session
       uses: P3TERX/debugger-action@master
-    - name : Upload artifacts
+    - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
         name: OpenWrt
-        path: ./lede/bin/targets/
+        path: ./lede/bin/targets/bcm53xx/generic/*r6300*
