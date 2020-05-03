@@ -12,6 +12,7 @@ jobs:
       run: |
         git clone https://github.com/coolsnowwolf/lede
         cd lede
+        echo "src-git helloworld https://github.com/fw876/helloworld" >> feeds.conf.default
         ./scripts/feeds update -a
         ./scripts/feeds install -a
     - name: Setup Debug Session
